@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>تماس با ما - سینا سپیدار کارمانیا | مشاوره و سفارش اختصاصی</title>
+  <meta name="description" content="ارتباط با کارشناسان شرکت سینا سپیدار کارمانیا جهت استعلام قیمت، سفارش عمده و بین‌المللی و مشاوره تخصصی صنایع دستی." />
+
+  <!-- Tailwind CSS & Fonts -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary": "#303032",
+            "tertiary-container": "#b4b2b4",
+            "tertiary-fixed": "#e4e2e4",
+            "secondary-fixed": "#e4e4cc",
+            "outline-variant": "#4d4635",
+            "surface-container-low": "#1c1b1b",
+            "inverse-surface": "#e5e2e1",
+            "on-primary-container": "#554300",
+            "on-secondary-container": "#b9baa3",
+            "inverse-on-surface": "#313030",
+            "tertiary-fixed-dim": "#c8c6c8",
+            "surface-container-high": "#2a2a2a",
+            "surface-bright": "#393939",
+            "outline": "#99907c",
+            "surface-variant": "#353534",
+            "surface-container": "#201f1f",
+            "surface-container-highest": "#353534",
+            "on-primary": "#3c2f00",
+            "error-container": "#93000a",
+            "surface-dim": "#131313",
+            "on-background": "#e5e2e1",
+            "inverse-primary": "#735c00",
+            "on-error": "#690005",
+            "on-tertiary-container": "#454547",
+            "on-surface": "#e5e2e1",
+            "on-primary-fixed": "#241a00",
+            "secondary-container": "#494a38",
+            "surface-tint": "#e9c349",
+            "surface": "#131313",
+            "primary-fixed": "#ffe088",
+            "primary-container": "#d4af37",
+            "on-secondary-fixed": "#1b1d0e",
+            "secondary-fixed-dim": "#c8c8b0",
+            "on-surface-variant": "#d0c5af",
+            "on-secondary": "#303221",
+            "tertiary": "#d0cdd0",
+            "on-error-container": "#ffdad6",
+            "background": "#131313",
+            "primary-fixed-dim": "#e9c349",
+            "surface-container-lowest": "#0e0e0e",
+            "secondary": "#c8c8b0",
+            "primary": "#f2ca50",
+            "error": "#ffb4ab"
+          },
+          fontFamily: {
+            "sans": ["Vazirmatn", "system-ui", "sans-serif"],
+            "headline-lg": ["Vazirmatn"],
+            "display-lg": ["Vazirmatn"],
+            "body-md": ["Vazirmatn"],
+            "label-md": ["Plus Jakarta Sans", "Vazirmatn"]
+          },
+          spacing: {
+            "margin-desktop": "64px",
+            "gutter": "24px",
+            "margin-mobile": "20px",
+            "container-max": "1280px"
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-background text-on-surface font-sans min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- TopNavBar -->
+  <header id="main-nav" class="bg-surface/60 backdrop-blur-3xl fixed top-0 w-full z-50 border-b border-white/10 shadow-2xl transition-all duration-300">
+    <div class="flex flex-row-reverse justify-between items-center px-4 md:px-margin-desktop w-full max-w-container-max mx-auto h-20">
+      <!-- Brand -->
+      <a href="index.html" class="font-headline-lg text-xl md:text-2xl font-bold text-primary tracking-tight flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-3xl">token</span>
+        <span>Sina Sepidar Karmania</span>
+      </a>
+
+      <!-- Nav Links -->
+      <nav class="hidden md:flex gap-8 items-center flex-row-reverse">
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-base hover:bg-white/5 px-3 py-1.5 rounded-lg" href="index.html">خانه</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-base hover:bg-white/5 px-3 py-1.5 rounded-lg" href="products.html">محصولات</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-base hover:bg-white/5 px-3 py-1.5 rounded-lg" href="services.html">خدمات</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-base hover:bg-white/5 px-3 py-1.5 rounded-lg" href="about.html">درباره ما</a>
+        <a class="text-primary border-b-2 border-primary pb-1 text-base font-semibold px-2 py-1" href="contact.html">تماس با ما</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="flex gap-2 md:gap-4 flex-row-reverse items-center">
+        <button class="trigger-search-modal text-primary hover:bg-white/5 p-2 rounded-full transition-all duration-300" aria-label="جستجو">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+        <button class="trigger-cart-modal text-primary hover:bg-white/5 p-2 rounded-full transition-all duration-300 relative" aria-label="سبد سفارش">
+          <span class="material-symbols-outlined">shopping_cart</span>
+          <span class="cart-badge-count hidden absolute -top-1 -right-1 bg-primary text-black text-xs font-bold w-5 h-5 rounded-full items-center justify-center">۰</span>
+        </button>
+        <a href="contact.html" class="hidden sm:flex text-primary hover:bg-white/5 p-2 rounded-full transition-all duration-300" aria-label="پروفایل">
+          <span class="material-symbols-outlined">person</span>
+        </a>
+        <button id="mobile-menu-btn" class="md:hidden text-primary p-2 rounded-lg hover:bg-white/5" aria-label="منوی موبایل">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu-drawer" class="fixed inset-0 z-50 modal-backdrop hidden">
+    <div class="fixed top-0 right-0 h-full w-4/5 max-w-sm bg-surface-container-high p-6 flex flex-col shadow-2xl border-l border-white/10 animate-fade-in">
+      <div class="flex justify-between items-center mb-8 border-b border-white/10 pb-4">
+        <span class="text-primary font-bold text-lg">سینا سپیدار کارمانیا</span>
+        <button id="mobile-menu-close" class="text-on-surface-variant hover:text-white p-1">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div class="flex flex-col gap-4 text-base">
+        <a href="index.html" class="text-on-surface-variant hover:text-primary py-2 pr-3">صفحه اصلی</a>
+        <a href="products.html" class="text-on-surface-variant hover:text-primary py-2 pr-3">مجموعه محصولات</a>
+        <a href="services.html" class="text-on-surface-variant hover:text-primary py-2 pr-3">خدمات تخصصی</a>
+        <a href="about.html" class="text-on-surface-variant hover:text-primary py-2 pr-3">درباره ما</a>
+        <a href="contact.html" class="text-primary font-bold py-2 border-r-2 border-primary pr-3">تماس با ما</a>
+      </div>
+      <div class="mt-auto pt-6 border-t border-white/10 flex flex-col gap-3">
+        <a href="https://t.me/SinaSepidarKarmania" target="_blank" class="btn-gold py-2.5 rounded-lg text-center font-bold text-sm flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-lg">send</span>
+          ارتباط مستقیم تلگرام
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Drawer -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 modal-backdrop hidden">
+    <div class="fixed top-0 left-0 h-full w-full max-w-md bg-surface-container-high p-6 flex flex-col shadow-2xl border-r border-white/10 animate-fade-in">
+      <div class="flex justify-between items-center mb-6 border-b border-white/10 pb-4">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary">shopping_bag</span>
+          <span class="text-on-surface font-bold text-lg">سبد سفارش و استعلام</span>
+        </div>
+        <button onclick="closeCartDrawer()" class="text-on-surface-variant hover:text-white p-1">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div id="cart-drawer-empty" class="flex-grow flex flex-col items-center justify-center text-center p-6 hidden">
+        <span class="material-symbols-outlined text-outline text-6xl mb-3">production_quantity_limits</span>
+        <h4 class="font-bold text-on-surface mb-2">سبد سفارش شما خالی است</h4>
+        <p class="text-xs text-on-surface-variant mb-6">آثار و صنایع دستی دلخواه خود را به سبد بیفزایید.</p>
+        <a href="products.html" onclick="closeCartDrawer()" class="btn-ghost px-6 py-2 rounded-lg text-sm">مشاهده محصولات</a>
+      </div>
+      <div id="cart-drawer-items" class="flex-grow overflow-y-auto flex flex-col gap-3 pr-1"></div>
+      <div id="cart-drawer-footer" class="pt-4 border-t border-white/10 flex flex-col gap-3">
+        <div class="flex justify-between items-center text-sm">
+          <span class="text-on-surface-variant">مبلغ تخمینی کل:</span>
+          <span id="cart-drawer-total-amount" class="text-primary font-bold text-lg">۰ تومان</span>
+        </div>
+        <button onclick="orderCartViaTelegram()" class="btn-gold w-full py-3 rounded-lg font-bold text-sm flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-lg">send</span>
+          ثبت و ارسال سفارش در تلگرام
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="flex-grow pt-32 pb-20 px-4 md:px-margin-desktop max-w-container-max mx-auto w-full">
+    <!-- Header -->
+    <section class="text-center md:text-right mb-16 animate-fade-in">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-primary mb-4">تماس با ما و مشاوره</h1>
+      <p class="text-base md:text-lg text-on-surface-variant max-w-3xl leading-relaxed">
+        جهت ثبت سفارش‌های اختصاصی، استعلام قیمت مجموعه‌های صادراتی و هماهنگی جلسات مشاوره تخصصی با ما در ارتباط باشید.
+      </p>
+    </section>
+
+    <!-- Content Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      <!-- Contact Cards (5 cols) -->
+      <div class="lg:col-span-5 space-y-6">
+        
+        <!-- Telegram Card (Highlighted) -->
+        <div class="glass-panel p-6 rounded-2xl border border-primary/40 text-right relative overflow-hidden">
+          <div class="absolute -top-12 -left-12 w-32 h-32 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="bg-primary text-black p-3 rounded-xl">
+              <span class="material-symbols-outlined text-2xl font-bold">send</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg text-on-surface">کانال و پشتیبانی تلگرام</h3>
+              <span class="text-xs text-primary font-medium">سریع‌ترین روش پاسخگویی ۲۴/۷</span>
+            </div>
+          </div>
+          <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+            برای دریافت کاتالوگ جامع، تصاویر باکیفیت و هماهنگی سفارش‌های سفارشی مستقیماً با آیدی تلگرام در ارتباط باشید.
+          </p>
+          <a href="https://t.me/SinaSepidarKarmania" target="_blank" class="btn-gold w-full py-2.5 rounded-lg text-center font-bold text-sm flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined text-lg">chat</span>
+            گفتگو در تلگرام (@SinaSepidarKarmania)
+          </a>
+        </div>
+
+        <!-- Phone & Office -->
+        <div class="glass-card p-6 rounded-2xl text-right">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="bg-surface-container-high text-primary p-3 rounded-xl">
+              <span class="material-symbols-outlined text-2xl">call</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-base text-on-surface">تماس مستقیم و پیام‌رسان‌ها</h3>
+              <span class="text-xs text-on-surface-variant">شنبه تا پنج‌شنبه، ۹ الی ۱۸</span>
+            </div>
+          </div>
+          <div class="space-y-2 text-sm text-on-surface-variant">
+            <div class="flex justify-between items-center py-1 border-b border-white/5">
+              <span>تلفن تماس / واتساپ:</span>
+              <span class="font-mono text-on-surface font-bold dir-ltr">+98 912 000 0000</span>
+            </div>
+            <div class="flex justify-between items-center py-1 border-b border-white/5">
+              <span>پست الکترونیک:</span>
+              <span class="font-mono text-on-surface text-xs">info@karmania-crafts.com</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Credentials Badge -->
+        <div class="glass-panel p-5 rounded-xl border border-white/10 text-xs text-on-surface-variant space-y-1">
+          <div class="font-bold text-on-surface text-sm mb-2 text-primary">مشخصات ثبتی شرکت:</div>
+          <div>شماره ثبت رسمی: <strong class="text-on-surface">۴۷۷۵</strong></div>
+          <div>شناسه ملی شرکت: <strong class="text-on-surface">۱۴۰۱۳۰۹۱۲۸۰</strong></div>
+        </div>
+
+      </div>
+
+      <!-- Consultation Form (7 cols) -->
+      <div class="lg:col-span-7">
+        <div class="glass-panel p-8 md:p-10 rounded-2xl text-right">
+          <h2 class="text-xl md:text-2xl font-bold text-on-surface mb-2">فرم درخواست مشاوره و استعلام</h2>
+          <p class="text-xs text-on-surface-variant mb-8 leading-relaxed">
+            اطلاعات خود را وارد نمایید؛ پیام شما آماده‌سازی شده و امکان ارسال سریع از طریق تلگرام فراهم می‌گردد.
+          </p>
+
+          <form id="contact-form" class="space-y-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-xs font-bold text-on-surface mb-2">نام و نام خانوادگی *</label>
+                <input type="text" id="form-name" required placeholder="مثال: سهراب سپهری" 
+                       class="w-full bg-surface-container-high border border-outline-variant/40 rounded-xl px-4 py-3 text-sm text-on-surface focus:outline-none focus:border-primary transition-colors" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-on-surface mb-2">شماره تماس یا آیدی تلگرام *</label>
+                <input type="text" id="form-contact" required placeholder="۰۹۱۲۰۰۰۰۰۰۰ یا @username" 
+                       class="w-full bg-surface-container-high border border-outline-variant/40 rounded-xl px-4 py-3 text-sm text-on-surface focus:outline-none focus:border-primary transition-colors" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-on-surface mb-2">موضوع درخواست</label>
+              <select id="form-subject" class="w-full bg-surface-container-high border border-outline-variant/40 rounded-xl px-4 py-3 text-sm text-on-surface focus:outline-none focus:border-primary transition-colors">
+                <option value="استعلام قیمت و خرید منسوجات">استعلام قیمت و خرید منسوجات و ترمه</option>
+                <option value="سفارش عمده و صادراتی">سفارش عمده و صادرات صنایع دستی</option>
+                <option value="مشاوره تخصصی بازرگانی">مشاوره تخصصی بازرگانی و سرمایه‌گذاری</option>
+                <option value="تامین مواد اولیه ابریشم">تامین مواد اولیه و کلاف ابریشم کاشان</option>
+                <option value="سایر موارد">سایر همکاری‌ها</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-on-surface mb-2">شرح درخواست یا سفارش *</label>
+              <textarea id="form-message" required rows="4" placeholder="توضیحات تکمیلی در مورد ابعاد، تعداد یا مشخصات مورد نظر خود را بنویسید..." 
+                        class="w-full bg-surface-container-high border border-outline-variant/40 rounded-xl px-4 py-3 text-sm text-on-surface focus:outline-none focus:border-primary transition-colors resize-none"></textarea>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 pt-2">
+              <button type="button" id="send-tg-btn" class="btn-gold flex-1 py-3.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-lg">send</span>
+                ارسال مستقیم به تلگرام
+              </button>
+              <button type="submit" class="btn-ghost px-6 py-3.5 rounded-xl font-medium text-sm flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-lg">mark_email_read</span>
+                ثبت در سامانه
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FAQ Accordion -->
+    <section class="mt-24 max-w-3xl mx-auto">
+      <div class="text-center mb-10">
+        <span class="text-primary text-xs font-bold">پرسش‌های متداول</span>
+        <h2 class="text-2xl font-bold text-on-surface mt-1">پاسخ به سوالات پرتکرار شما</h2>
+      </div>
+
+      <div class="space-y-4">
+        <div class="glass-panel p-5 rounded-xl border border-white/10 text-right cursor-pointer" onclick="toggleFaq(this)">
+          <div class="flex justify-between items-center font-bold text-sm text-on-surface">
+            <span>نحوه تایید اصالت و شناسنامه آثار به چه صورت است؟</span>
+            <span class="material-symbols-outlined text-primary transition-transform duration-300">expand_more</span>
+          </div>
+          <p class="text-xs text-on-surface-variant leading-relaxed mt-3 hidden pt-3 border-t border-white/5">
+            تمام آثار با امضا و شناسنامه اختصاصی شرکت سینا سپیدار کارمانیا ارائه می‌شوند که شامل مشخصات استادکار، خلوص متریال و تکنیک بافت یا ساخت اثر است.
+          </p>
+        </div>
+
+        <div class="glass-panel p-5 rounded-xl border border-white/10 text-right cursor-pointer" onclick="toggleFaq(this)">
+          <div class="flex justify-between items-center font-bold text-sm text-on-surface">
+            <span>آیا امکان ارسال سفارش به خارج از کشور وجود دارد؟</span>
+            <span class="material-symbols-outlined text-primary transition-transform duration-300">expand_more</span>
+          </div>
+          <p class="text-xs text-on-surface-variant leading-relaxed mt-3 hidden pt-3 border-t border-white/5">
+            بله، بسته‌بندی‌های ضد ضربه صادراتی به همراه گواهی‌های ترخیص و بیمه حمل بین‌المللی برای مقاصد مختلف آماده‌سازی و ارسال می‌گردند.
+          </p>
+        </div>
+
+        <div class="glass-panel p-5 rounded-xl border border-white/10 text-right cursor-pointer" onclick="toggleFaq(this)">
+          <div class="flex justify-between items-center font-bold text-sm text-on-surface">
+            <span>چگونه می‌توان سفارش‌های اختصاصی با طرح دلخواه ثبت کرد؟</span>
+            <span class="material-symbols-outlined text-primary transition-transform duration-300">expand_more</span>
+          </div>
+          <p class="text-xs text-on-surface-variant leading-relaxed mt-3 hidden pt-3 border-t border-white/5">
+            از طریق ارتباط مستقیم در تلگرام یا فرم تماس، ابعاد و نقشه مورد نظر خود را ارسال نمایید تا پیش‌فاکتور و زمان‌بندی بافت توسط استادکاران برای شما ارسال شود.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating Telegram Ordering Button -->
+  <a href="https://t.me/SinaSepidarKarmania" target="_blank" class="floating-telegram bg-primary text-black p-3.5 rounded-full shadow-2xl pulse-gold flex items-center justify-center" title="ارتباط و ثبت سفارش سریع در تلگرام" aria-label="ارتباط با تلگرام">
+    <span class="material-symbols-outlined text-2xl font-bold">send</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-surface-container-lowest w-full pt-16 pb-8 border-t border-outline-variant/30 mt-auto">
+    <div class="flex flex-col items-center px-4 md:px-margin-desktop w-full max-w-container-max mx-auto text-right">
+      <div class="w-full flex flex-col md:flex-row justify-between items-center mb-12 gap-8">
+        <a class="font-headline-lg text-xl font-bold text-primary" href="index.html">Sina Sepidar Karmania</a>
+        <nav class="flex flex-wrap gap-6 justify-center">
+          <a class="text-sm text-on-surface-variant hover:text-primary-container transition-colors" href="contact.html">تماس با ما</a>
+          <a class="text-sm text-on-surface-variant hover:text-primary-container transition-colors" href="about.html">درباره ما</a>
+          <a class="text-sm text-on-surface-variant hover:text-primary-container transition-colors" href="services.html">خدمات تخصصی</a>
+          <a class="text-sm text-on-surface-variant hover:text-primary-container transition-colors" href="products.html">مجموعه محصولات</a>
+        </nav>
+      </div>
+      <div class="w-full border-t border-outline-variant/20 pt-6 text-center">
+        <p class="text-xs text-on-surface-variant opacity-70">© ۱۴۰۲ سینا سپیدار کارمانیا. تمامی حقوق محفوظ است.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    function toggleFaq(el) {
+      const p = el.querySelector('p');
+      const icon = el.querySelector('.material-symbols-outlined');
+      if (p) {
+        p.classList.toggle('hidden');
+        if (p.classList.contains('hidden')) {
+          icon.style.transform = 'rotate(0deg)';
+        } else {
+          icon.style.transform = 'rotate(180deg)';
+        }
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const sendTgBtn = document.getElementById('send-tg-btn');
+      const form = document.getElementById('contact-form');
+
+      if (sendTgBtn) {
+        sendTgBtn.addEventListener('click', () => {
+          const name = document.getElementById('form-name').value.trim();
+          const contact = document.getElementById('form-contact').value.trim();
+          const subject = document.getElementById('form-subject').value;
+          const msg = document.getElementById('form-message').value.trim();
+
+          if (!name || !contact) {
+            showToast('لطفاً نام و شماره تماس خود را وارد نمایید', 'error');
+            return;
+          }
+
+          let text = `سلام و احترام،\nدرخواست پیام/مشاوره از وب‌سایت سینا سپیدار کارمانیا:\n\n` +
+            `👤 نام: ${name}\n` +
+            `📞 اطلاعات تماس: ${contact}\n` +
+            `📌 موضوع: ${subject}\n` +
+            `📝 متن پیام: ${msg || 'ندارد'}\n`;
+
+          const encoded = encodeURIComponent(text);
+          window.open(`https://t.me/SinaSepidarKarmania?text=${encoded}`, '_blank');
+          showToast('درحال اتصال به تلگرام...', 'success');
+        });
+      }
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          showToast('درخواست شما با موفقیت ثبت شد. کارشناسان ما به زودی با شما تماس خواهند گرفت.', 'success');
+          form.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

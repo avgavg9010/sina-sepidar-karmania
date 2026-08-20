@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>خدمات تخصصی - سینا سپیدار کارمانیا | تجارت بین‌الملل، مشاوره و آموزش</title>
+  <meta name="description" content="ارائه دهنده خدمات جامع در حوزه‌های تجارت بین‌الملل، مشاوره تخصصی، آموزش و برگزاری رویدادهای بین‌المللی با رویکردی لوکس و حرفه‌ای." />
+
+  <!-- Tailwind CSS & Fonts -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary": "#303032",
+            "tertiary-container": "#b4b2b4",
+            "tertiary-fixed": "#e4e2e4",
+            "secondary-fixed": "#e4e4cc",
+            "outline-variant": "#4d4635",
+            "surface-container-low": "#1c1b1b",
+            "inverse-surface": "#e5e2e1",
+            "on-primary-container": "#554300",
+            "on-secondary-container": "#b9baa3",
+            "inverse-on-surface": "#313030",
+            "tertiary-fixed-dim": "#c8c6c8",
+            "surface-container-high": "#2a2a2a",
+            "surface-bright": "#393939",
+            "outline": "#99907c",
+            "surface-variant": "#353534",
+            "surface-container": "#201f1f",
+            "surface-container-highest": "#353534",
+            "on-primary": "#3c2f00",
+            "error-container": "#93000a",
+            "surface-dim": "#131313",
+            "on-background": "#e5e2e1",
+            "inverse-primary": "#735c00",
+            "on-error": "#690005",
+            "on-tertiary-container": "#454547",
+            "on-surface": "#e5e2e1",
+            "on-primary-fixed": "#241a00",
+            "secondary-container": "#494a38",
+            "surface-tint": "#e9c349",
+            "surface": "#131313",
+            "primary-fixed": "#ffe088",
+            "primary-container": "#d4af37",
+            "on-secondary-fixed": "#1b1d0e",
+            "secondary-fixed-dim": "#c8c8b0",
+            "on-surface-variant": "#d0c5af",
+            "on-secondary": "#303221",
+            "tertiary": "#d0cdd0",
+            "on-error-container": "#ffdad6",
+            "background": "#131313",
+            "primary-fixed-dim": "#e9c349",
+            "surface-container-lowest": "#0e0e0e",
+            "secondary": "#c8c8b0",
+            "primary": "#f2ca50",
+            "error": "#ffb4ab"
+          },
+          fontFamily: {
+            "sans": ["Vazirmatn", "system-ui", "sans-serif"],
+            "headline-lg": ["Vazirmatn"],
+            "display-lg": ["Vazirmatn"],
+            "body-md": ["Vazirmatn"],
+            "label-md": ["Plus Jakarta Sans", "Vazirmatn"]
+          },
+          spacing: {
+            "margin-desktop": "64px",
+            "gutter": "24px",
+            "margin-mobile": "20px",
+            "container-max": "1280px"
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-background text-on-surface font-sans min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- TopNavBar (Web) -->
+  <header id="main-nav" class="bg-surface/60 backdrop-blur-3xl fixed top-0 w-full z-50 border-b border-white/10 shadow-2xl transition-all duration-300">
+    <div class="flex flex-row-reverse justify-between items-center px-4 md:px-margin-desktop w-full max-w-container-max mx-auto h-20">
+      <!-- Brand -->
+      <a href="index.html" class="font-headline-lg text-xl md:text-2xl font-bold text-primary tracking-tight flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-3xl">token</span>
+        <span>Sina Sepidar Karmania</span>
+      </a>
+
+      <!-- Nav Links -->
+      <nav class="hidden md:flex gap-8 items-center flex-row-reverse">
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-base hover:bg-white/5 px-3 py-1.5 rounded-lg" href="index.html">خانه</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-base hover:bg-white/5 px-3 py-1.5 rounded-lg" href="products.html">محصولات</a>
+        <a class="text-primary border-b-2 border-primary pb-1 text-base font-semibold px-2 py-1" href="services.html">خدمات</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-base hover:bg-white/5 px-3 py-1.5 rounded-lg" href="about.html">درباره ما</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-base hover:bg-white/5 px-3 py-1.5 rounded-lg" href="contact.html">تماس با ما</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="flex gap-2 md:gap-4 flex-row-reverse items-center">
+        <button class="trigger-search-modal text-primary hover:bg-white/5 p-2 rounded-full transition-all duration-300" aria-label="جستجو">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+        <button class="trigger-cart-modal text-primary hover:bg-white/5 p-2 rounded-full transition-all duration-300 relative" aria-label="سبد سفارش">
+          <span class="material-symbols-outlined">shopping_cart</span>
+          <span class="cart-badge-count hidden absolute -top-1 -right-1 bg-primary text-black text-xs font-bold w-5 h-5 rounded-full items-center justify-center">۰</span>
+        </button>
+        <a href="contact.html" class="hidden sm:flex text-primary hover:bg-white/5 p-2 rounded-full transition-all duration-300" aria-label="پروفایل">
+          <span class="material-symbols-outlined">person</span>
+        </a>
+        <button id="mobile-menu-btn" class="md:hidden text-primary p-2 rounded-lg hover:bg-white/5" aria-label="منوی موبایل">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div id="mobile-menu-drawer" class="fixed inset-0 z-50 modal-backdrop hidden">
+    <div class="fixed top-0 right-0 h-full w-4/5 max-w-sm bg-surface-container-high p-6 flex flex-col shadow-2xl border-l border-white/10 animate-fade-in">
+      <div class="flex justify-between items-center mb-8 border-b border-white/10 pb-4">
+        <span class="text-primary font-bold text-lg">سینا سپیدار کارمانیا</span>
+        <button id="mobile-menu-close" class="text-on-surface-variant hover:text-white p-1">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div class="flex flex-col gap-4 text-base">
+        <a href="index.html" class="text-on-surface-variant hover:text-primary py-2 pr-3">صفحه اصلی</a>
+        <a href="products.html" class="text-on-surface-variant hover:text-primary py-2 pr-3">مجموعه محصولات</a>
+        <a href="services.html" class="text-primary font-bold py-2 border-r-2 border-primary pr-3">خدمات تخصصی</a>
+        <a href="about.html" class="text-on-surface-variant hover:text-primary py-2 pr-3">درباره ما</a>
+        <a href="contact.html" class="text-on-surface-variant hover:text-primary py-2 pr-3">تماس با ما</a>
+      </div>
+      <div class="mt-auto pt-6 border-t border-white/10 flex flex-col gap-3">
+        <a href="https://t.me/SinaSepidarKarmania" target="_blank" class="btn-gold py-2.5 rounded-lg text-center font-bold text-sm flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-lg">send</span>
+          ارتباط مستقیم تلگرام
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Drawer -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 modal-backdrop hidden">
+    <div class="fixed top-0 left-0 h-full w-full max-w-md bg-surface-container-high p-6 flex flex-col shadow-2xl border-r border-white/10 animate-fade-in">
+      <div class="flex justify-between items-center mb-6 border-b border-white/10 pb-4">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary">shopping_bag</span>
+          <span class="text-on-surface font-bold text-lg">سبد سفارش و استعلام</span>
+        </div>
+        <button onclick="closeCartDrawer()" class="text-on-surface-variant hover:text-white p-1">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div id="cart-drawer-empty" class="flex-grow flex flex-col items-center justify-center text-center p-6 hidden">
+        <span class="material-symbols-outlined text-outline text-6xl mb-3">production_quantity_limits</span>
+        <h4 class="font-bold text-on-surface mb-2">سبد سفارش شما خالی است</h4>
+        <p class="text-xs text-on-surface-variant mb-6">آثار و صنایع دستی دلخواه خود را به سبد بیفزایید.</p>
+        <a href="products.html" onclick="closeCartDrawer()" class="btn-ghost px-6 py-2 rounded-lg text-sm">مشاهده محصولات</a>
+      </div>
+      <div id="cart-drawer-items" class="flex-grow overflow-y-auto flex flex-col gap-3 pr-1"></div>
+      <div id="cart-drawer-footer" class="pt-4 border-t border-white/10 flex flex-col gap-3">
+        <div class="flex justify-between items-center text-sm">
+          <span class="text-on-surface-variant">مبلغ تخمینی کل:</span>
+          <span id="cart-drawer-total-amount" class="text-primary font-bold text-lg">۰ تومان</span>
+        </div>
+        <button onclick="orderCartViaTelegram()" class="btn-gold w-full py-3 rounded-lg font-bold text-sm flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-lg">send</span>
+          ثبت و ارسال سفارش در تلگرام
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Service Details Modal -->
+  <div id="service-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop hidden">
+    <div class="glass-panel w-full max-w-2xl rounded-2xl p-6 md:p-8 border border-white/15 animate-fade-in relative">
+      <button onclick="closeServiceModal()" class="absolute top-4 left-4 text-on-surface-variant hover:text-white p-1">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <div class="flex items-center gap-3 mb-4">
+        <div id="service-modal-icon" class="bg-surface-container-high p-3 rounded-lg text-primary">
+          <span class="material-symbols-outlined text-3xl">flight_takeoff</span>
+        </div>
+        <h3 id="service-modal-title" class="text-xl font-bold text-on-surface">عنوان خدمت</h3>
+      </div>
+      <p id="service-modal-desc" class="text-sm md:text-base text-on-surface-variant leading-relaxed mb-6">
+        توضیحات تکمیلی خدمت مورد نظر.
+      </p>
+      <div class="bg-surface-container-low p-4 rounded-xl border border-white/5 mb-6 text-xs text-on-surface-variant space-y-2">
+        <div class="flex items-center gap-2 text-primary font-bold">
+          <span class="material-symbols-outlined text-base">support_agent</span>
+          نحوه دریافت مشاوره و عقد قرارداد:
+        </div>
+        <p>تیم حقوقی و بازرگانی بین‌المللی سینا سپیدار کارمانیا به صورت اختصاصی آماده هماهنگی جلسات حضوری و آنلاین می‌باشد.</p>
+      </div>
+      <div class="flex gap-3 flex-row-reverse">
+        <button id="service-modal-telegram-btn" class="btn-gold px-6 py-2.5 rounded-lg text-sm font-bold flex items-center gap-2">
+          <span class="material-symbols-outlined text-lg">send</span>
+          درخواست مشاوره در تلگرام
+        </button>
+        <button onclick="closeServiceModal()" class="btn-ghost px-6 py-2.5 rounded-lg text-sm">
+          بستن
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="flex-grow pt-32 pb-margin-desktop px-4 md:px-margin-desktop max-w-container-max mx-auto w-full">
+    <!-- Hero Section -->
+    <section class="mb-20 text-center md:text-right animate-fade-in">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-primary mb-6">خدمات تخصصی</h1>
+      <p class="text-base md:text-lg text-on-surface-variant max-w-3xl leading-relaxed">
+        ارائه دهنده خدمات جامع در حوزه‌های تجارت بین‌الملل، مشاوره تخصصی، آموزش و برگزاری رویدادهای بین‌المللی با رویکردی لوکس و حرفه‌ای.
+      </p>
+    </section>
+
+    <!-- Services Grid (2x2 matching Screen 1) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+      
+      <!-- Service 1: Import/Export -->
+      <div class="glass-card rounded-2xl p-8 flex flex-col items-start gold-glow group">
+        <div class="bg-surface-container-high p-4 rounded-xl mb-6 border border-outline-variant/30 text-primary group-hover:bg-primary group-hover:text-black transition-colors duration-300">
+          <span class="material-symbols-outlined text-4xl">flight_takeoff</span>
+        </div>
+        <h2 class="text-xl md:text-2xl font-bold text-on-surface mb-4">واردات و صادرات</h2>
+        <p class="text-on-surface-variant text-sm md:text-base leading-relaxed mb-6 flex-grow">
+          تسهیل فرآیندهای تجارت بین‌الملل با تکیه بر شبکه گسترده ارتباطی و دانش تخصصی گمرکی. مدیریت صفر تا صد زنجیره تامین محصولات لوکس و دست‌ساز.
+        </p>
+        <button onclick="openServiceModal('واردات و صادرات', 'flight_takeoff', 'شرکت سینا سپیدار کارمانیا با برخورداری از کارت بازرگانی معتبر و شبکه ترخیص و ترانزیت بین‌المللی، فرآیند صادرات صنایع دستی نفیس و واردات مواد اولیه تخصصی (ابریشم، رنگ‌های ارگانیک، ابزار دقیق) را با بالاترین استانداردهای قانونی و بسته‌بندی‌های لوکس مدیریت می‌کند.')" 
+                class="text-primary font-bold flex items-center gap-2 hover:text-primary-fixed transition-colors text-sm">
+          <span>اطلاعات بیشتر</span>
+          <span class="material-symbols-outlined text-lg rtl:rotate-180">arrow_forward</span>
+        </button>
+      </div>
+
+      <!-- Service 2: Consulting -->
+      <div class="glass-card rounded-2xl p-8 flex flex-col items-start gold-glow group">
+        <div class="bg-surface-container-high p-4 rounded-xl mb-6 border border-outline-variant/30 text-primary group-hover:bg-primary group-hover:text-black transition-colors duration-300">
+          <span class="material-symbols-outlined text-4xl">handshake</span>
+        </div>
+        <h2 class="text-xl md:text-2xl font-bold text-on-surface mb-4">مشاوره تخصصی</h2>
+        <p class="text-on-surface-variant text-sm md:text-base leading-relaxed mb-6 flex-grow">
+          ارائه راهکارهای استراتژیک برای ورود به بازارهای جهانی، برندسازی محصولات خاص و بهینه‌سازی فرآیندهای تجاری ویژه شرکت‌های معتبر.
+        </p>
+        <button onclick="openServiceModal('مشاوره تخصصی بازرگانی و برندسازی', 'handshake', 'ما با تحلیل دقیق بازارهای هدف در حوزه خلیج فارس، اروپا و شرق آسیا، استراتژی قیمت‌گذاری، اخذ استانداردهای بین‌المللی و هویت بصری لوکس را برای تولیدکنندگان و برندهای برتر صنایع دستی تدوین می‌کنیم.')" 
+                class="text-primary font-bold flex items-center gap-2 hover:text-primary-fixed transition-colors text-sm">
+          <span>اطلاعات بیشتر</span>
+          <span class="material-symbols-outlined text-lg rtl:rotate-180">arrow_forward</span>
+        </button>
+      </div>
+
+      <!-- Service 3: Education -->
+      <div class="glass-card rounded-2xl p-8 flex flex-col items-start gold-glow group">
+        <div class="bg-surface-container-high p-4 rounded-xl mb-6 border border-outline-variant/30 text-primary group-hover:bg-primary group-hover:text-black transition-colors duration-300">
+          <span class="material-symbols-outlined text-4xl">school</span>
+        </div>
+        <h2 class="text-xl md:text-2xl font-bold text-on-surface mb-4">آموزش حرفه‌ای</h2>
+        <p class="text-on-surface-variant text-sm md:text-base leading-relaxed mb-6 flex-grow">
+          برگزاری دوره‌های تخصصی در زمینه تجارت بین‌الملل، شناخت بازارهای هدف و اصول مذاکرات تجاری برای مدیران ارشد و فعالان اقتصادی.
+        </p>
+        <button onclick="openServiceModal('آموزش حرفه‌ای تجارت و مذاکره', 'school', 'برگزاری کارگاه‌های کاربردی مذاکرات تجاری، تشریفات دیپلماتیک بازرگانی، اصول اینکوترمز ۲۰۲۰ و شناخت ارزش‌گذاری آثار موزه‌ای با تدریس اساتید بنام و اهدای گواهینامه معتبر.')" 
+                class="text-primary font-bold flex items-center gap-2 hover:text-primary-fixed transition-colors text-sm">
+          <span>اطلاعات بیشتر</span>
+          <span class="material-symbols-outlined text-lg rtl:rotate-180">arrow_forward</span>
+        </button>
+      </div>
+
+      <!-- Service 4: Seminars -->
+      <div class="glass-card rounded-2xl p-8 flex flex-col items-start gold-glow group">
+        <div class="bg-surface-container-high p-4 rounded-xl mb-6 border border-outline-variant/30 text-primary group-hover:bg-primary group-hover:text-black transition-colors duration-300">
+          <span class="material-symbols-outlined text-4xl">event</span>
+        </div>
+        <h2 class="text-xl md:text-2xl font-bold text-on-surface mb-4">سمینارها و نمایشگاه‌ها</h2>
+        <p class="text-on-surface-variant text-sm md:text-base leading-relaxed mb-6 flex-grow">
+          طراحی و اجرای رویدادهای تجاری سطح بالا، حضور در نمایشگاه‌های بین‌المللی معتبر و برگزاری نشست‌های تخصصی B2B.
+        </p>
+        <button onclick="openServiceModal('سمینارها و پاویون‌های نمایشگاهی', 'event', 'برنامه‌ریزی، طراحی غرفه و سازماندهی هیئت‌های تجاری برای شرکت در معتبرترین اکسپوها و گالری‌های بین‌المللی دبی، پاریس، میلان و توکیو جهت معرفی شایسته دست‌سازه‌های فاخر ایرانی.')" 
+                class="text-primary font-bold flex items-center gap-2 hover:text-primary-fixed transition-colors text-sm">
+          <span>اطلاعات بیشتر</span>
+          <span class="material-symbols-outlined text-lg rtl:rotate-180">arrow_forward</span>
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Floating Telegram Ordering Button -->
+  <a href="https://t.me/SinaSepidarKarmania" target="_blank" class="floating-telegram bg-primary text-black p-3.5 rounded-full shadow-2xl pulse-gold flex items-center justify-center" title="ارتباط و ثبت سفارش سریع در تلگرام" aria-label="ارتباط با تلگرام">
+    <span class="material-symbols-outlined text-2xl font-bold">send</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-surface-container-lowest w-full pt-16 pb-8 border-t border-outline-variant/30 flex flex-col items-center px-4 md:px-margin-desktop max-w-container-max mx-auto text-right mt-auto">
+    <div class="w-full flex flex-col md:flex-row justify-between items-center mb-12 gap-8">
+      <div class="font-headline-lg text-xl font-bold text-primary">Sina Sepidar Karmania</div>
+      <nav class="flex flex-wrap gap-6 justify-center">
+        <a class="text-sm text-on-surface-variant hover:text-primary-container transition-colors" href="contact.html">تماس با ما</a>
+        <a class="text-sm text-on-surface-variant hover:text-primary-container transition-colors" href="about.html">درباره ما</a>
+        <a class="text-sm text-on-surface-variant hover:text-primary-container transition-colors" href="services.html">خدمات تخصصی</a>
+        <a class="text-sm text-on-surface-variant hover:text-primary-container transition-colors" href="products.html">مجموعه محصولات</a>
+      </nav>
+    </div>
+    <div class="w-full border-t border-outline-variant/20 pt-6 text-center md:text-right">
+      <p class="text-xs text-on-surface-variant opacity-70">© ۱۴۰۲ سینا سپیدار کارمانیا. تمامی حقوق محفوظ است.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    function openServiceModal(title, icon, desc) {
+      const modal = document.getElementById('service-modal');
+      const titleEl = document.getElementById('service-modal-title');
+      const iconEl = document.getElementById('service-modal-icon');
+      const descEl = document.getElementById('service-modal-desc');
+      const tgBtn = document.getElementById('service-modal-telegram-btn');
+
+      if (titleEl) titleEl.textContent = title;
+      if (iconEl) iconEl.innerHTML = `<span class="material-symbols-outlined text-3xl">${icon}</span>`;
+      if (descEl) descEl.textContent = desc;
+      
+      if (tgBtn) {
+        tgBtn.onclick = () => {
+          const text = encodeURIComponent(`سلام و احترام،\nمایل به دریافت مشاوره در زمینه «${title}» از شرکت سینا سپیدار کارمانیا هستم.`);
+          window.open(`https://t.me/SinaSepidarKarmania?text=${text}`, '_blank');
+        };
+      }
+
+      if (modal) {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeServiceModal() {
+      const modal = document.getElementById('service-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }
+  </script>
+</body>
+</html>

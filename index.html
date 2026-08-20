@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>سینا سپیدار کارمانیا - Sina Sepidar Karmania | هنر اصیل، تجلی شکوه ایرانی</title>
+  <meta name="description" content="سینا سپیدار کارمانیا، پیوندی میان اصالت صنایع دستی کهن و تجمل مدرن. مجموعه‌ای بی‌نظیر از منسوجات دست‌باف و آثار هنری دست‌ساز." />
+  
+  <!-- Tailwind CSS & Fonts -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary": "#303032",
+            "tertiary-container": "#b4b2b4",
+            "tertiary-fixed": "#e4e2e4",
+            "secondary-fixed": "#e4e4cc",
+            "outline-variant": "#4d4635",
+            "surface-container-low": "#1c1b1b",
+            "inverse-surface": "#e5e2e1",
+            "on-primary-container": "#554300",
+            "on-secondary-container": "#b9baa3",
+            "inverse-on-surface": "#313030",
+            "tertiary-fixed-dim": "#c8c6c8",
+            "surface-container-high": "#2a2a2a",
+            "surface-bright": "#393939",
+            "outline": "#99907c",
+            "surface-variant": "#353534",
+            "surface-container": "#201f1f",
+            "surface-container-highest": "#353534",
+            "on-primary": "#3c2f00",
+            "error-container": "#93000a",
+            "surface-dim": "#131313",
+            "on-background": "#e5e2e1",
+            "inverse-primary": "#735c00",
+            "on-error": "#690005",
+            "on-tertiary-container": "#454547",
+            "on-surface": "#e5e2e1",
+            "on-primary-fixed": "#241a00",
+            "secondary-container": "#494a38",
+            "surface-tint": "#e9c349",
+            "surface": "#131313",
+            "primary-fixed": "#ffe088",
+            "primary-container": "#d4af37",
+            "on-secondary-fixed": "#1b1d0e",
+            "secondary-fixed-dim": "#c8c8b0",
+            "on-surface-variant": "#d0c5af",
+            "on-secondary": "#303221",
+            "tertiary": "#d0cdd0",
+            "on-error-container": "#ffdad6",
+            "background": "#131313",
+            "primary-fixed-dim": "#e9c349",
+            "surface-container-lowest": "#0e0e0e",
+            "secondary": "#c8c8b0",
+            "primary": "#f2ca50",
+            "error": "#ffb4ab"
+          },
+          fontFamily: {
+            "sans": ["Vazirmatn", "system-ui", "sans-serif"],
+            "headline-lg": ["Vazirmatn"],
+            "display-lg": ["Vazirmatn"],
+            "body-md": ["Vazirmatn"],
+            "label-md": ["Plus Jakarta Sans", "Vazirmatn"]
+          },
+          spacing: {
+            "margin-desktop": "64px",
+            "gutter": "24px",
+            "margin-mobile": "20px",
+            "container-max": "1280px"
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-background text-on-surface font-sans min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- TopNavBar -->
+  <nav id="main-nav" class="bg-surface/60 backdrop-blur-3xl fixed top-0 w-full z-50 border-b border-white/10 shadow-2xl transition-all duration-300">
+    <div class="flex flex-row-reverse justify-between items-center px-4 md:px-margin-desktop w-full max-w-container-max mx-auto h-20">
+      <!-- Logo -->
+      <a href="index.html" class="font-headline-lg text-xl md:text-2xl font-bold text-primary tracking-tight flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-3xl">token</span>
+        <span>Sina Sepidar Karmania</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <div class="hidden md:flex gap-8 flex-row-reverse items-center">
+        <a class="text-primary border-b-2 border-primary pb-1 text-base font-semibold px-2 py-1 transition-all" href="index.html">خانه</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-base hover:bg-white/5 px-3 py-1.5 rounded-lg" href="products.html">محصولات</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-base hover:bg-white/5 px-3 py-1.5 rounded-lg" href="services.html">خدمات</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-base hover:bg-white/5 px-3 py-1.5 rounded-lg" href="about.html">درباره ما</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-base hover:bg-white/5 px-3 py-1.5 rounded-lg" href="contact.html">تماس با ما</a>
+      </div>
+
+      <!-- Trailing Actions -->
+      <div class="flex gap-2 md:gap-4 flex-row-reverse items-center">
+        <button class="trigger-search-modal text-primary hover:bg-white/5 p-2 rounded-full transition-all duration-300" aria-label="جستجو" title="جستجو">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+
+        <button class="trigger-cart-modal text-primary hover:bg-white/5 p-2 rounded-full transition-all duration-300 relative" aria-label="سبد سفارش" title="سبد سفارش">
+          <span class="material-symbols-outlined">shopping_cart</span>
+          <span class="cart-badge-count hidden absolute -top-1 -right-1 bg-primary text-black text-xs font-bold w-5 h-5 rounded-full items-center justify-center">۰</span>
+        </button>
+
+        <a href="contact.html" class="hidden sm:flex text-primary hover:bg-white/5 p-2 rounded-full transition-all duration-300" aria-label="پشتیبانی و تماس" title="تماس با ما">
+          <span class="material-symbols-outlined">person</span>
+        </a>
+
+        <!-- Mobile menu toggle -->
+        <button id="mobile-menu-btn" class="md:hidden text-primary p-2 rounded-lg hover:bg-white/5" aria-label="منوی موبایل">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu-drawer" class="fixed inset-0 z-50 modal-backdrop hidden">
+    <div class="fixed top-0 right-0 h-full w-4/5 max-w-sm bg-surface-container-high p-6 flex flex-col shadow-2xl border-l border-white/10 animate-fade-in">
+      <div class="flex justify-between items-center mb-8 border-b border-white/10 pb-4">
+        <span class="text-primary font-bold text-lg">سینا سپیدار کارمانیا</span>
+        <button id="mobile-menu-close" class="text-on-surface-variant hover:text-white p-1">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div class="flex flex-col gap-4 text-base">
+        <a href="index.html" class="text-primary font-bold py-2 border-r-2 border-primary pr-3">صفحه اصلی</a>
+        <a href="products.html" class="text-on-surface-variant hover:text-primary py-2 pr-3">مجموعه محصولات</a>
+        <a href="services.html" class="text-on-surface-variant hover:text-primary py-2 pr-3">خدمات تخصصی</a>
+        <a href="about.html" class="text-on-surface-variant hover:text-primary py-2 pr-3">درباره ما</a>
+        <a href="contact.html" class="text-on-surface-variant hover:text-primary py-2 pr-3">تماس با ما</a>
+      </div>
+      <div class="mt-auto pt-6 border-t border-white/10 flex flex-col gap-3">
+        <a href="https://t.me/SinaSepidarKarmania" target="_blank" class="btn-gold py-2.5 rounded-lg text-center font-bold text-sm flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-lg">send</span>
+          ارتباط مستقیم تلگرام
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Drawer -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 modal-backdrop hidden">
+    <div class="fixed top-0 left-0 h-full w-full max-w-md bg-surface-container-high p-6 flex flex-col shadow-2xl border-r border-white/10 animate-fade-in">
+      <div class="flex justify-between items-center mb-6 border-b border-white/10 pb-4">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary">shopping_bag</span>
+          <span class="text-on-surface font-bold text-lg">سبد سفارش و استعلام</span>
+        </div>
+        <button onclick="closeCartDrawer()" class="text-on-surface-variant hover:text-white p-1">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+
+      <div id="cart-drawer-empty" class="flex-grow flex flex-col items-center justify-center text-center p-6 hidden">
+        <span class="material-symbols-outlined text-outline text-6xl mb-3">production_quantity_limits</span>
+        <h4 class="font-bold text-on-surface mb-2">سبد سفارش شما خالی است</h4>
+        <p class="text-xs text-on-surface-variant mb-6">آثار و صنایع دستی دلخواه خود را به سبد بیفزایید.</p>
+        <a href="products.html" onclick="closeCartDrawer()" class="btn-ghost px-6 py-2 rounded-lg text-sm">مشاهده محصولات</a>
+      </div>
+
+      <div id="cart-drawer-items" class="flex-grow overflow-y-auto flex flex-col gap-3 pr-1"></div>
+
+      <div id="cart-drawer-footer" class="pt-4 border-t border-white/10 flex flex-col gap-3">
+        <div class="flex justify-between items-center text-sm">
+          <span class="text-on-surface-variant">مبلغ تخمینی کل:</span>
+          <span id="cart-drawer-total-amount" class="text-primary font-bold text-lg">۰ تومان</span>
+        </div>
+        <button onclick="orderCartViaTelegram()" class="btn-gold w-full py-3 rounded-lg font-bold text-sm flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-lg">send</span>
+          ثبت و ارسال سفارش در تلگرام
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="flex-grow pt-20">
+    <!-- Hero Section -->
+    <section class="relative min-h-[850px] md:min-h-[920px] flex items-center justify-center overflow-hidden">
+      <!-- Background Image with Overlay -->
+      <div class="absolute inset-0 img-overlay z-0">
+        <img class="w-full h-full object-cover opacity-45 transform scale-105 transition-transform duration-1000" 
+             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs9ciaDdYHFypuGGJgLGk2A5WYwtB81sWnZZNSj4iVFFsYJfy2HOMKLxDv9Ai-b_-rSgs_fs55BvbWKUQMOdv7OqMjrZ22XWi0u7lWgzHA1I1gqN1an-XHg0FPAKxNsSl4cVTImsLMGrrpmmYxKgcHggXL9Y8TDZmWjaCDDb8pJWzp2b1OgGdWXoG31Ne691FVSLISidmFVi7_tPFInIzMW0G08ZLPosgGgwJWhBJvmjsZ9ptK3io0" 
+             alt="منسوجات نفیس و دست‌بافته‌های ایرانی سینا سپیدار کارمانیا" />
+      </div>
+
+      <!-- Hero Card Panel -->
+      <div class="relative z-10 max-w-container-max mx-auto px-4 md:px-margin-desktop w-full flex flex-col items-start">
+        <div class="glass-panel p-8 md:p-14 rounded-2xl max-w-2xl text-right animate-fade-in">
+          <div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 px-3.5 py-1 rounded-full text-xs font-semibold text-primary mb-6">
+            <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+            <span>شرکت بازرگانی و صنایع دستی سینا سپیدار کارمانیا</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-on-surface mb-6 leading-tight">
+            هنر اصیل،<br/>
+            <span class="text-primary-container text-glow">تجلی شکوه ایرانی</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-on-surface-variant mb-10 leading-relaxed font-normal">
+            سینا سپیدار کارمانیا، پیوندی میان اصالت صنایع دستی کهن و تجمل مدرن. مجموعه‌ای بی‌نظیر از منسوجات دست‌باف و آثار هنری دست‌ساز برای کلکسیونرها و فضاهای لوکس.
+          </p>
+
+          <div class="flex flex-wrap gap-4 flex-row-reverse">
+            <a href="products.html" class="btn-gold text-sm md:text-base px-8 py-3.5 rounded-lg flex items-center gap-2 font-bold">
+              <span class="material-symbols-outlined text-[20px]">explore</span>
+              کشف مجموعه
+            </a>
+            <a href="contact.html" class="btn-ghost text-sm md:text-base px-8 py-3.5 rounded-lg font-medium flex items-center gap-2">
+              <span class="material-symbols-outlined text-[20px]">support_agent</span>
+              مشاوره تخصصی
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Preview Highlights -->
+    <section class="py-20 px-4 md:px-margin-desktop max-w-container-max mx-auto w-full">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 border-b border-white/10 pb-6">
+        <div>
+          <span class="text-primary text-xs font-bold tracking-widest uppercase">کلکسیون برگزیده</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-on-surface mt-1">شاهکارهای دست‌ساز کارمانیا</h2>
+        </div>
+        <a href="products.html" class="mt-4 md:mt-0 text-primary hover:text-primary-fixed text-sm font-semibold flex items-center gap-1.5 transition-colors">
+          <span>مشاهده تمام محصولات</span>
+          <span class="material-symbols-outlined text-base rtl:rotate-180">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Item 1 -->
+        <div class="glass-card rounded-xl overflow-hidden flex flex-col cursor-pointer" onclick="window.location.href='products.html'">
+          <div class="h-56 overflow-hidden relative">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1TL_TBR449yBdxZG1yukxv-R49lcl0GWZwJVmuZjQaCHK1fLscLlOikILvA_k6LGpRptyR_tzYzkTkcQRLKVlTMvOL2qWb2orIdFBMMSM-q6CFN0w2FPVGs5pzUhG01dEW0D3NpKixrdjAXXabBLeQmuQAREAx-y_GnG69om9UQXYIVW1Z11QerSFKf6-TZQwVtlyU89oSR_wE3b5bhE85vMIY8EAGBfVwtF4_1vBJ60ogZkzN9DF" 
+                 alt="ترمه دست‌باف ابریشمی" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+            <div class="absolute top-3 right-3 bg-primary text-black text-xs font-bold px-2.5 py-1 rounded-full">منسوجات</div>
+          </div>
+          <div class="p-5 flex-grow flex flex-col justify-between">
+            <h3 class="font-bold text-base text-on-surface mb-2">ترمه دست‌باف ابریشمی شاه‌عباسی</h3>
+            <div class="flex justify-between items-center text-primary font-bold text-sm mt-3">
+              <span>تماس برای قیمت</span>
+              <span class="material-symbols-outlined text-sm rtl:rotate-180">arrow_forward</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="glass-card rounded-xl overflow-hidden flex flex-col cursor-pointer" onclick="window.location.href='products.html'">
+          <div class="h-56 overflow-hidden relative">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxGZB2j8alcPJ9PLvFmiriigr9Ia54ZE4U5zUkOqm73kZtcuLMLXQoehmgrR8rAKbv8x5OrnpZhbO1MoLZeRsHEq0pTJU_aGIMedgZaVcQS46MenQCTSc3ZrpEL3Bnunm0FbtAwQZJILweIH2sjQCBAcxD4bSuZp5zyFJX-1IWlBGRScmTmO3ivpu_sHhx3yZQjeJPGbqqG16Ipj7cll2qkFCrPzXbwJbvnixBx-Xca7bp29Mw-UUm" 
+                 alt="صندوقچه خاتم‌کاری" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+            <div class="absolute top-3 right-3 bg-primary text-black text-xs font-bold px-2.5 py-1 rounded-full">خاتم‌کاری</div>
+          </div>
+          <div class="p-5 flex-grow flex flex-col justify-between">
+            <h3 class="font-bold text-base text-on-surface mb-2">صندوقچه خاتم‌کاری اعلا اصفهان</h3>
+            <div class="flex justify-between items-center text-primary font-bold text-sm mt-3">
+              <span>تماس برای قیمت</span>
+              <span class="material-symbols-outlined text-sm rtl:rotate-180">arrow_forward</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="glass-card rounded-xl overflow-hidden flex flex-col cursor-pointer" onclick="window.location.href='products.html'">
+          <div class="h-56 overflow-hidden relative">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHWnoRYH8EadFqXo7VW3iYJGwxLK4W04d6ZTBT3MYYgC-hgbBV8SpohoX_2covqHAKOq5ufHylFgjF2wPwR7go-VLFchCS-GydYkkm1Ka9Ogcb6XWpf5LW4mu0Y7fYyMDWtrUWkY2bT0lPyJqUw-VtBoYvFA_sD1Mdu6RJZLlcuhkMTACVnisI9J3k_5J81ZTEhboE8Hs42yNI6V7jtcOcIMRU0rmPN-ZKATP8AV71zPX6Pkf_y3NQ" 
+                 alt="کلاف ابریشم خالص" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+            <div class="absolute top-3 right-3 bg-primary text-black text-xs font-bold px-2.5 py-1 rounded-full">مواد اولیه</div>
+          </div>
+          <div class="p-5 flex-grow flex flex-col justify-between">
+            <h3 class="font-bold text-base text-on-surface mb-2">کلاف ابریشم خالص بافت کاشان</h3>
+            <div class="flex justify-between items-center text-primary font-bold text-sm mt-3">
+              <span>تماس برای قیمت</span>
+              <span class="material-symbols-outlined text-sm rtl:rotate-180">arrow_forward</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="glass-card rounded-xl overflow-hidden flex flex-col cursor-pointer" onclick="window.location.href='products.html'">
+          <div class="h-56 overflow-hidden relative">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOZCSVycXApnm5x3bK4wM4hDKmq8nRP_iNUpLxXMAsXsT55qgH5U5tfDeaUYI4bP624d2HMDrov51V8BfBJ-k_LycHPz5LB6xVPK55eb8XnYCeTi5S_BiKy1N6ZRk7kHqBqmsIzkhTOpYPm0l0H27YEOfkp4Ddgpk8tFSA-ulkCpoH_mrImoRezFLJh0L5meKcUaPyVu-MKxUP9HRlfFa0GrwYTteXgXqMrw44-VEQvYg7m3uAqM3c" 
+                 alt="بشقاب میناکاری اسلیمی" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+            <div class="absolute top-3 right-3 bg-primary text-black text-xs font-bold px-2.5 py-1 rounded-full">میناکاری</div>
+          </div>
+          <div class="p-5 flex-grow flex flex-col justify-between">
+            <h3 class="font-bold text-base text-on-surface mb-2">بشقاب میناکاری شده طرح اسلیمی</h3>
+            <div class="flex justify-between items-center text-primary font-bold text-sm mt-3">
+              <span>تماس برای قیمت</span>
+              <span class="material-symbols-outlined text-sm rtl:rotate-180">arrow_forward</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Teaser Section -->
+    <section class="py-16 bg-surface-container-lowest/50 border-y border-white/5">
+      <div class="max-w-container-max mx-auto px-4 md:px-margin-desktop">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-primary text-xs font-bold">حوزه‌های فعالیت بین‌المللی</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-on-surface mt-2">خدمات تخصصی بازرگانی و مشاوره</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="glass-panel p-6 rounded-xl text-right">
+            <span class="material-symbols-outlined text-primary text-3xl mb-3">flight_takeoff</span>
+            <h3 class="font-bold text-lg text-on-surface mb-2">واردات و صادرات</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">تسهیل فرآیندهای تجارت بین‌الملل و زنجیره تامین محصولات لوکس.</p>
+          </div>
+          <div class="glass-panel p-6 rounded-xl text-right">
+            <span class="material-symbols-outlined text-primary text-3xl mb-3">handshake</span>
+            <h3 class="font-bold text-lg text-on-surface mb-2">مشاوره تخصصی</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">ارائه راهکارهای استراتژیک برای ورود به بازارهای جهانی و برندسازی.</p>
+          </div>
+          <div class="glass-panel p-6 rounded-xl text-right">
+            <span class="material-symbols-outlined text-primary text-3xl mb-3">school</span>
+            <h3 class="font-bold text-lg text-on-surface mb-2">آموزش حرفه‌ای</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">برگزاری دوره‌های تخصصی تجارت بین‌الملل و اصول مذاکرات تجاری.</p>
+          </div>
+          <div class="glass-panel p-6 rounded-xl text-right">
+            <span class="material-symbols-outlined text-primary text-3xl mb-3">event</span>
+            <h3 class="font-bold text-lg text-on-surface mb-2">سمینارها و رویدادها</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">طراحی و اجرای رویدادهای تجاری B2B و حضور در نمایشگاه‌های معتبر.</p>
+          </div>
+        </div>
+        <div class="text-center mt-10">
+          <a href="services.html" class="btn-ghost px-6 py-2.5 rounded-lg text-sm inline-flex items-center gap-2">
+            <span>بررسی جزئیات خدمات</span>
+            <span class="material-symbols-outlined text-sm rtl:rotate-180">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating Telegram Ordering Button -->
+  <a href="https://t.me/SinaSepidarKarmania" target="_blank" class="floating-telegram bg-primary text-black p-3.5 rounded-full shadow-2xl pulse-gold flex items-center justify-center" title="ارتباط و ثبت سفارش سریع در تلگرام" aria-label="ارتباط با تلگرام">
+    <span class="material-symbols-outlined text-2xl font-bold">send</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-surface-container-lowest w-full pt-16 pb-8 border-t border-outline-variant/30 mt-auto">
+    <div class="flex flex-col items-center px-4 md:px-margin-desktop w-full max-w-container-max mx-auto text-right">
+      <div class="w-full flex flex-col md:flex-row justify-between items-center mb-12 gap-8">
+        <div class="font-headline-lg text-xl font-bold text-primary">Sina Sepidar Karmania</div>
+        <nav class="flex flex-wrap justify-center gap-6 md:gap-8">
+          <a class="text-sm text-on-surface-variant hover:text-primary-container transition-colors" href="contact.html">تماس با ما</a>
+          <a class="text-sm text-on-surface-variant hover:text-primary-container transition-colors" href="about.html">درباره ما</a>
+          <a class="text-sm text-on-surface-variant hover:text-primary-container transition-colors" href="services.html">خدمات تخصصی</a>
+          <a class="text-sm text-on-surface-variant hover:text-primary-container transition-colors" href="products.html">مجموعه محصولات</a>
+        </nav>
+      </div>
+      <div class="w-full border-t border-outline-variant/20 pt-6 text-center">
+        <div class="text-xs text-on-surface-variant opacity-70">
+          © ۱۴۰۲ سینا سپیدار کارمانیا. تمامی حقوق محفوظ است. شماره ثبت: ۴۷۷۵ | شناسه ملی: ۱۴۰۱۳۰۹۱۲۸۰
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>مجموعه محصولات - سینا سپیدار کارمانیا | منسوجات و صنایع دستی نفیس</title>
+  <meta name="description" content="مجموعه نفیس‌ترین منسوجات دست‌باف، ترمه، خاتم‌کاری، میناکاری و ابریشم اصیل ایرانی سینا سپیدار کارمانیا." />
+
+  <!-- Tailwind CSS & Fonts -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary": "#303032",
+            "tertiary-container": "#b4b2b4",
+            "tertiary-fixed": "#e4e2e4",
+            "secondary-fixed": "#e4e4cc",
+            "outline-variant": "#4d4635",
+            "surface-container-low": "#1c1b1b",
+            "inverse-surface": "#e5e2e1",
+            "on-primary-container": "#554300",
+            "on-secondary-container": "#b9baa3",
+            "inverse-on-surface": "#313030",
+            "tertiary-fixed-dim": "#c8c6c8",
+            "surface-container-high": "#2a2a2a",
+            "surface-bright": "#393939",
+            "outline": "#99907c",
+            "surface-variant": "#353534",
+            "surface-container": "#201f1f",
+            "surface-container-highest": "#353534",
+            "on-primary": "#3c2f00",
+            "error-container": "#93000a",
+            "surface-dim": "#131313",
+            "on-background": "#e5e2e1",
+            "inverse-primary": "#735c00",
+            "on-error": "#690005",
+            "on-tertiary-container": "#454547",
+            "on-surface": "#e5e2e1",
+            "on-primary-fixed": "#241a00",
+            "secondary-container": "#494a38",
+            "surface-tint": "#e9c349",
+            "surface": "#131313",
+            "primary-fixed": "#ffe088",
+            "primary-container": "#d4af37",
+            "on-secondary-fixed": "#1b1d0e",
+            "secondary-fixed-dim": "#c8c8b0",
+            "on-surface-variant": "#d0c5af",
+            "on-secondary": "#303221",
+            "tertiary": "#d0cdd0",
+            "on-error-container": "#ffdad6",
+            "background": "#131313",
+            "primary-fixed-dim": "#e9c349",
+            "surface-container-lowest": "#0e0e0e",
+            "secondary": "#c8c8b0",
+            "primary": "#f2ca50",
+            "error": "#ffb4ab"
+          },
+          fontFamily: {
+            "sans": ["Vazirmatn", "system-ui", "sans-serif"],
+            "headline-lg": ["Vazirmatn"],
+            "display-lg": ["Vazirmatn"],
+            "body-md": ["Vazirmatn"],
+            "label-md": ["Plus Jakarta Sans", "Vazirmatn"]
+          },
+          spacing: {
+            "margin-desktop": "64px",
+            "gutter": "24px",
+            "margin-mobile": "20px",
+            "container-max": "1280px"
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-background text-on-surface font-sans min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- TopNavBar -->
+  <nav id="main-nav" class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-3xl border-b border-white/10 shadow-2xl transition-all duration-300">
+    <div class="flex flex-row-reverse justify-between items-center px-4 md:px-margin-desktop w-full max-w-container-max mx-auto h-20">
+      <!-- Brand -->
+      <a href="index.html" class="font-headline-lg text-xl md:text-2xl font-bold text-primary tracking-tight flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-3xl">token</span>
+        <span>Sina Sepidar Karmania</span>
+      </a>
+
+      <!-- Navigation Links (Desktop) -->
+      <ul class="hidden md:flex flex-row-reverse items-center gap-8">
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-base hover:bg-white/5 px-3 py-1.5 rounded-lg" href="index.html">خانه</a></li>
+        <li class="relative">
+          <a class="text-primary border-b-2 border-primary pb-1 text-base font-semibold px-2 py-1" href="products.html">محصولات</a>
+        </li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-base hover:bg-white/5 px-3 py-1.5 rounded-lg" href="services.html">خدمات</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-base hover:bg-white/5 px-3 py-1.5 rounded-lg" href="about.html">درباره ما</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-base hover:bg-white/5 px-3 py-1.5 rounded-lg" href="contact.html">تماس با ما</a></li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="flex flex-row-reverse items-center gap-2 md:gap-4">
+        <button class="trigger-search-modal text-primary hover:bg-white/5 p-2 rounded-full transition-all duration-300" aria-label="جستجو" title="جستجو">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+        <button class="trigger-cart-modal text-primary hover:bg-white/5 p-2 rounded-full transition-all duration-300 relative" aria-label="سبد سفارش" title="سبد سفارش">
+          <span class="material-symbols-outlined">shopping_cart</span>
+          <span class="cart-badge-count hidden absolute -top-1 -right-1 bg-primary text-black text-xs font-bold w-5 h-5 rounded-full items-center justify-center">۰</span>
+        </button>
+        <a href="contact.html" class="hidden sm:flex text-primary hover:bg-white/5 p-2 rounded-full transition-all duration-300" aria-label="پروفایل" title="تماس با ما">
+          <span class="material-symbols-outlined">person</span>
+        </a>
+        <button id="mobile-menu-btn" class="md:hidden text-primary p-2 rounded-lg hover:bg-white/5" aria-label="منوی موبایل">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu-drawer" class="fixed inset-0 z-50 modal-backdrop hidden">
+    <div class="fixed top-0 right-0 h-full w-4/5 max-w-sm bg-surface-container-high p-6 flex flex-col shadow-2xl border-l border-white/10 animate-fade-in">
+      <div class="flex justify-between items-center mb-8 border-b border-white/10 pb-4">
+        <span class="text-primary font-bold text-lg">سینا سپیدار کارمانیا</span>
+        <button id="mobile-menu-close" class="text-on-surface-variant hover:text-white p-1">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div class="flex flex-col gap-4 text-base">
+        <a href="index.html" class="text-on-surface-variant hover:text-primary py-2 pr-3">صفحه اصلی</a>
+        <a href="products.html" class="text-primary font-bold py-2 border-r-2 border-primary pr-3">مجموعه محصولات</a>
+        <a href="services.html" class="text-on-surface-variant hover:text-primary py-2 pr-3">خدمات تخصصی</a>
+        <a href="about.html" class="text-on-surface-variant hover:text-primary py-2 pr-3">درباره ما</a>
+        <a href="contact.html" class="text-on-surface-variant hover:text-primary py-2 pr-3">تماس با ما</a>
+      </div>
+      <div class="mt-auto pt-6 border-t border-white/10 flex flex-col gap-3">
+        <a href="https://t.me/SinaSepidarKarmania" target="_blank" class="btn-gold py-2.5 rounded-lg text-center font-bold text-sm flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-lg">send</span>
+          ارتباط مستقیم تلگرام
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Drawer -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 modal-backdrop hidden">
+    <div class="fixed top-0 left-0 h-full w-full max-w-md bg-surface-container-high p-6 flex flex-col shadow-2xl border-r border-white/10 animate-fade-in">
+      <div class="flex justify-between items-center mb-6 border-b border-white/10 pb-4">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary">shopping_bag</span>
+          <span class="text-on-surface font-bold text-lg">سبد سفارش و استعلام</span>
+        </div>
+        <button onclick="closeCartDrawer()" class="text-on-surface-variant hover:text-white p-1">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div id="cart-drawer-empty" class="flex-grow flex flex-col items-center justify-center text-center p-6 hidden">
+        <span class="material-symbols-outlined text-outline text-6xl mb-3">production_quantity_limits</span>
+        <h4 class="font-bold text-on-surface mb-2">سبد سفارش شما خالی است</h4>
+        <p class="text-xs text-on-surface-variant mb-6">آثار و صنایع دستی دلخواه خود را به سبد بیفزایید.</p>
+        <button onclick="closeCartDrawer()" class="btn-ghost px-6 py-2 rounded-lg text-sm">مشاهده محصولات</button>
+      </div>
+      <div id="cart-drawer-items" class="flex-grow overflow-y-auto flex flex-col gap-3 pr-1"></div>
+      <div id="cart-drawer-footer" class="pt-4 border-t border-white/10 flex flex-col gap-3">
+        <div class="flex justify-between items-center text-sm">
+          <span class="text-on-surface-variant">مبلغ تخمینی کل:</span>
+          <span id="cart-drawer-total-amount" class="text-primary font-bold text-lg">۰ تومان</span>
+        </div>
+        <button onclick="orderCartViaTelegram()" class="btn-gold w-full py-3 rounded-lg font-bold text-sm flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-lg">send</span>
+          ثبت و ارسال سفارش در تلگرام
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="flex-grow pt-32 pb-24 px-4 md:px-margin-desktop w-full max-w-container-max mx-auto">
+    <!-- Header Section -->
+    <header class="mb-14 text-center md:text-right animate-fade-in">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-on-surface mb-4">مجموعه محصولات</h1>
+      <p class="text-base md:text-lg text-on-surface-variant max-w-3xl leading-relaxed">
+        تجلی هنر و مهارت اجدادی در قالب نفیس‌ترین دست‌بافته‌ها و صنایع دستی. هر قطعه، داستانی از اصالت و زیبایی بی‌زمان را روایت می‌کند.
+      </p>
+    </header>
+
+    <!-- Catalog Layout -->
+    <div class="flex flex-col lg:flex-row gap-8">
+      <!-- Sidebar / Filters (Glass Panel) -->
+      <aside class="w-full lg:w-1/4 flex-shrink-0">
+        <div class="glass-panel rounded-2xl p-6 sticky top-28">
+          <div class="flex justify-between items-center mb-6">
+            <h2 class="text-lg font-bold text-primary flex items-center gap-2">
+              <span class="material-symbols-outlined text-xl">tune</span>
+              فیلترها
+            </h2>
+            <button id="clear-filters-btn" class="text-on-surface-variant hover:text-primary text-xs flex items-center gap-1 transition-colors">
+              <span class="material-symbols-outlined text-[16px]">filter_list_off</span>
+              پاک‌کردن
+            </button>
+          </div>
+
+          <!-- Categories -->
+          <div class="mb-6 border-b border-white/10 pb-6">
+            <h3 class="text-sm font-bold text-on-surface mb-4">دسته‌بندی‌ها</h3>
+            <div class="space-y-3">
+              <label class="flex items-center gap-3 cursor-pointer group">
+                <input type="checkbox" value="all" class="category-filter form-checkbox h-4 w-4 rounded border-outline-variant bg-surface-container-high text-primary focus:ring-primary checked:border-primary" checked />
+                <span class="text-sm text-primary font-medium group-hover:text-primary transition-colors">همه آثار</span>
+              </label>
+              <label class="flex items-center gap-3 cursor-pointer group">
+                <input type="checkbox" value="منسوجات دستی" class="category-filter form-checkbox h-4 w-4 rounded border-outline-variant bg-surface-container-high text-primary focus:ring-primary checked:border-primary" />
+                <span class="text-sm text-on-surface-variant group-hover:text-primary transition-colors">منسوجات دستی</span>
+              </label>
+              <label class="flex items-center gap-3 cursor-pointer group">
+                <input type="checkbox" value="صنایع دستی تزئینی" class="category-filter form-checkbox h-4 w-4 rounded border-outline-variant bg-surface-container-high text-primary focus:ring-primary checked:border-primary" />
+                <span class="text-sm text-on-surface-variant group-hover:text-primary transition-colors">صنایع دستی تزئینی</span>
+              </label>
+              <label class="flex items-center gap-3 cursor-pointer group">
+                <input type="checkbox" value="مواد اولیه" class="category-filter form-checkbox h-4 w-4 rounded border-outline-variant bg-surface-container-high text-primary focus:ring-primary checked:border-primary" />
+                <span class="text-sm text-on-surface-variant group-hover:text-primary transition-colors">مواد اولیه</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Sort -->
+          <div class="mb-4">
+            <h3 class="text-sm font-bold text-on-surface mb-3">مرتب‌سازی بر اساس</h3>
+            <div class="relative">
+              <select id="sort-select" class="w-full bg-surface-container-high border border-outline-variant/60 text-on-surface text-sm rounded-lg px-4 py-2.5 appearance-none focus:outline-none focus:border-primary transition-colors">
+                <option value="newest">جدیدترین</option>
+                <option value="price-desc">بیشترین قیمت</option>
+                <option value="price-asc">کمترین قیمت</option>
+                <option value="title">نام محصول (الفبا)</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center px-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-sm">expand_more</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Order Info box -->
+          <div class="mt-6 bg-surface-container-lowest/80 p-4 rounded-xl border border-primary/20 text-xs text-on-surface-variant leading-relaxed">
+            <div class="flex items-center gap-1.5 text-primary font-bold mb-1">
+              <span class="material-symbols-outlined text-base">verified</span>
+              سفارش مستقیم و اختصاصی
+            </div>
+            برای سفارش در ابعاد سفارشی و صادراتی، می‌توانید با تیم پشتیبانی در تلگرام در ارتباط باشید.
+          </div>
+        </div>
+      </aside>
+
+      <!-- Product Grid Container -->
+      <div class="w-full lg:w-3/4">
+        <!-- Results Counter & Search within page -->
+        <div class="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4 bg-surface-container-low/50 p-4 rounded-xl border border-white/5">
+          <div class="text-sm text-on-surface-variant">
+            نمایش <strong id="product-count-display" class="text-primary font-bold">۶</strong> اثر اصیل ایرانی
+          </div>
+          <div class="w-full sm:w-72 relative">
+            <input type="text" id="inline-search" placeholder="جستجوی سریع در محصولات..." 
+                   class="w-full bg-surface-container-high border border-outline-variant/40 rounded-lg py-2 pr-9 pl-3 text-xs text-on-surface focus:outline-none focus:border-primary transition-colors" />
+            <span class="material-symbols-outlined absolute right-2.5 top-2.5 text-on-surface-variant text-base">search</span>
+          </div>
+        </div>
+
+        <!-- Dynamic Grid -->
+        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+          <!-- Populated by JavaScript from PRODUCTS_DATA -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-16 flex justify-center items-center gap-2">
+          <button class="p-2 text-on-surface-variant hover:text-primary transition-colors rounded-full hover:bg-white/5 disabled:opacity-40" disabled>
+            <span class="material-symbols-outlined rtl:rotate-180">chevron_left</span>
+          </button>
+          <button class="w-10 h-10 rounded-full bg-primary text-black font-bold flex items-center justify-center shadow-lg">۱</button>
+          <button class="w-10 h-10 rounded-full text-on-surface-variant hover:bg-white/5 hover:text-primary transition-colors flex items-center justify-center">۲</button>
+          <button class="w-10 h-10 rounded-full text-on-surface-variant hover:bg-white/5 hover:text-primary transition-colors flex items-center justify-center">۳</button>
+          <button class="p-2 text-on-surface-variant hover:text-primary transition-colors rounded-full hover:bg-white/5">
+            <span class="material-symbols-outlined rtl:rotate-180">chevron_right</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Floating Telegram Ordering Button -->
+  <a href="https://t.me/SinaSepidarKarmania" target="_blank" class="floating-telegram bg-primary text-black p-3.5 rounded-full shadow-2xl pulse-gold flex items-center justify-center" title="ارتباط و ثبت سفارش سریع در تلگرام" aria-label="ارتباط با تلگرام">
+    <span class="material-symbols-outlined text-2xl font-bold">send</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-surface-container-lowest w-full pt-16 pb-8 border-t border-outline-variant/30 mt-auto">
+    <div class="flex flex-col items-center px-4 md:px-margin-desktop w-full max-w-container-max mx-auto text-right">
+      <div class="w-full flex flex-col md:flex-row justify-between items-center mb-8 gap-6">
+        <a class="font-headline-lg text-xl font-bold text-primary" href="index.html">Sina Sepidar Karmania</a>
+        <ul class="flex flex-wrap justify-center gap-6">
+          <li><a class="text-sm text-on-surface-variant hover:text-primary-container transition-colors" href="contact.html">تماس با ما</a></li>
+          <li><a class="text-sm text-on-surface-variant hover:text-primary-container transition-colors" href="about.html">درباره ما</a></li>
+          <li><a class="text-sm text-on-surface-variant hover:text-primary-container transition-colors" href="services.html">خدمات تخصصی</a></li>
+          <li><a class="text-sm text-on-surface-variant hover:text-primary-container transition-colors" href="products.html">مجموعه محصولات</a></li>
+        </ul>
+      </div>
+      <p class="text-xs text-on-surface-variant text-center opacity-70">
+        © ۱۴۰۲ سینا سپیدار کارمانیا. تمامی حقوق محفوظ است.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Page Specific Filtering Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('products-grid');
+      const countEl = document.getElementById('product-count-display');
+      const sortSelect = document.getElementById('sort-select');
+      const searchInput = document.getElementById('inline-search');
+      const categoryCheckboxes = document.querySelectorAll('.category-filter');
+      const clearFiltersBtn = document.getElementById('clear-filters-btn');
+
+      function renderProducts() {
+        if (!grid || typeof PRODUCTS_DATA === 'undefined') return;
+
+        // 1. Get filter categories
+        let selectedCategories = [];
+        categoryCheckboxes.forEach(cb => {
+          if (cb.checked && cb.value !== 'all') {
+            selectedCategories.push(cb.value);
+          }
+        });
+
+        // 2. Filter data
+        let filtered = PRODUCTS_DATA.filter(item => {
+          // Category match
+          const catMatch = selectedCategories.length === 0 || selectedCategories.includes(item.category);
+          
+          // Search query
+          const q = searchInput ? searchInput.value.trim().toLowerCase() : '';
+          const searchMatch = !q || 
+            item.title.toLowerCase().includes(q) || 
+            item.category.toLowerCase().includes(q) ||
+            item.shortDesc.toLowerCase().includes(q);
+
+          return catMatch && searchMatch;
+        });
+
+        // 3. Sort data
+        const sortVal = sortSelect ? sortSelect.value : 'newest';
+        if (sortVal === 'price-desc') {
+          filtered.sort((a, b) => (b.priceNumeric || 0) - (a.priceNumeric || 0));
+        } else if (sortVal === 'price-asc') {
+          filtered.sort((a, b) => (a.priceNumeric || 0) - (b.priceNumeric || 0));
+        } else if (sortVal === 'title') {
+          filtered.sort((a, b) => a.title.localeCompare(b.title, 'fa'));
+        }
+
+        // 4. Update count
+        if (countEl) countEl.textContent = filtered.length.toLocaleString('fa-IR');
+
+        // 5. Render HTML
+        if (filtered.length === 0) {
+          grid.innerHTML = `
+            <div class="col-span-full py-16 text-center glass-panel rounded-2xl">
+              <span class="material-symbols-outlined text-outline text-5xl mb-2">search_off</span>
+              <h4 class="text-base font-bold text-on-surface">محصولی با این فیلترها یافت نشد</h4>
+              <p class="text-xs text-on-surface-variant mt-1">لطفاً فیلترها را تغییر داده یا جستجوی خود را پاک کنید.</p>
+            </div>
+          `;
+          return;
+        }
+
+        grid.innerHTML = filtered.map(product => `
+          <div class="glass-card rounded-2xl overflow-hidden flex flex-col group relative">
+            <div class="relative h-64 overflow-hidden bg-surface-dim cursor-pointer" onclick="openProductModal('${product.id}')">
+              <img src="${product.image}" alt="${product.title}" 
+                   class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="image-overlay"></div>
+              ${product.badge ? `
+                <div class="absolute top-4 right-4 bg-primary text-black text-xs font-bold px-3 py-1 rounded-full backdrop-blur-md shadow-md">
+                  ${product.badge}
+                </div>
+              ` : ''}
+            </div>
+
+            <div class="p-6 flex-grow flex flex-col">
+              <div class="text-xs text-primary font-medium tracking-wider mb-2">${product.category}</div>
+              <h3 class="font-bold text-base md:text-lg text-on-surface mb-3 line-clamp-2 cursor-pointer hover:text-primary transition-colors" 
+                  onclick="openProductModal('${product.id}')">
+                ${product.title}
+              </h3>
+              <p class="text-xs text-on-surface-variant line-clamp-2 mb-4 leading-relaxed">${product.shortDesc}</p>
+
+              <div class="mt-auto pt-4 border-t border-white/5 flex justify-between items-center gap-2">
+                <span class="text-sm md:text-base font-bold text-primary">${product.priceFormatted || product.priceText}</span>
+                <div class="flex items-center gap-1.5">
+                  <button onclick="appCart.addItem(PRODUCTS_DATA.find(p=>p.id==='${product.id}'))" 
+                          class="text-on-surface-variant hover:text-primary p-2 rounded-lg hover:bg-white/5 transition-colors" 
+                          title="افزودن به سبد سفارش">
+                    <span class="material-symbols-outlined text-xl">add_shopping_cart</span>
+                  </button>
+                  <button onclick="orderProductDirectViaTelegram('${product.id}')" 
+                          class="text-primary hover:bg-primary hover:text-black p-2 rounded-lg transition-colors border border-primary/40" 
+                          title="سفارش مستقیم در تلگرام">
+                    <span class="material-symbols-outlined text-lg rtl:rotate-180">arrow_forward</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      // Event Listeners for Filtering
+      categoryCheckboxes.forEach(cb => {
+        cb.addEventListener('change', (e) => {
+          if (e.target.value === 'all') {
+            if (e.target.checked) {
+              categoryCheckboxes.forEach(other => {
+                if (other !== e.target) other.checked = false;
+              });
+            }
+          } else {
+            const allCheckbox = document.querySelector('.category-filter[value="all"]');
+            if (allCheckbox) allCheckbox.checked = false;
+          }
+          renderProducts();
+        });
+      });
+
+      if (sortSelect) sortSelect.addEventListener('change', renderProducts);
+      if (searchInput) searchInput.addEventListener('input', renderProducts);
+
+      if (clearFiltersBtn) {
+        clearFiltersBtn.addEventListener('click', () => {
+          categoryCheckboxes.forEach(cb => {
+            cb.checked = (cb.value === 'all');
+          });
+          if (searchInput) searchInput.value = '';
+          if (sortSelect) sortSelect.value = 'newest';
+          renderProducts();
+        });
+      }
+
+      // Initial Render
+      renderProducts();
+    });
+  </script>
+</body>
+</html>
